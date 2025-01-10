@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mival Salón</title>
+    <style>
+        body { font-family: Lora, serif; margin: 0; padding: 0; box-sizing: border-box; background-color: #EAE1D8; color: #000000; }
+        header { background-color: #FFFFFF; padding: 60px 20px; text-align: center; }
+        header img { width: 250px; height: auto; margin-bottom: 20px; }
+        header p { font-style: italic; font-size: 20px; color: #BFA7DB; margin: 0; }
+        .container { padding: 20px; max-width: 900px; margin: auto; }
+        .section { margin-bottom: 40px; text-align: center; }
+        .section h2 { color: #BFA7DB; font-size: 24px; font-weight: 600; border-bottom: 1px solid #BFA7DB; padding-bottom: 10px; width: 100%; text-align: center; }
+        .gallery { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+        .gallery img { width: 150px; height: auto; border-radius: 10px; }
+        form { display: flex; flex-direction: column; gap: 10px; max-width: 400px; margin: auto; }
+        input, select, button { padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+        button { background-color: #BFA7DB; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #9C8BC6; }
+        .contact-info { font-size: 14px; font-weight: 300; text-align: center; margin-top: 20px; font-family: "Lora", serif; }
+        .contact-info img { width: 20px; height: 20px; vertical-align: middle; margin-right: 5px; }
+        .footer { padding: 40px 20px; text-align: center; background-color: #EAE1D8; margin-top: 40px; }
+        .footer p { font-size: 24px; font-style: italic; font-weight: 300; color: #000000; margin: 0; }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo de Mival">
+        <p>Manos expertas, resultados extraordinarios.</p>
+    </header>
+    <div class="container">
+        <div class="section" id="trabajos">
+            <h2>Explora la belleza de nuestros trabajos</h2>
+            <div class="gallery">
+                <img src="IMG_8090.jpg" >
+                <img src="IMG_8091.jpg" >
+                <img src="IMG_8096.jpg" >
+                <img src="IMG_8097.jpg" >
+                <img src="IMG_8098.jpg" >
+                <img src="IMG_8099.jpg" >
+            </div>
+        </div>
+        <div class="section" id="agendar">
+            <h2>Agendar Cita de Valoración</h2>
+            <form action="https://formspree.io/f/myzzlkkb" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="date">Fecha:</label>
+                <input type="date" id="date" name="date" required>
+                <label for="time">Hora:</label>
+                <input type="time" id="time" name="time" required>
+                <label for="contact">Correo o WhatsApp:</label>
+                <input type="text" id="contact" name="contact" required>
+                <button type="submit">Enviar Cita</button>
+            </form>
+            <p id="confirmation-message" style="color: green; display: none;">Tu cita ha sido agendada con éxito. Te enviaremos el enlace para la videollamada.</p>
+        </div>
+        <div class="section" id="contacto">
+            <h2>Contacto</h2>
+            <div class="contact-info">
+                <p><img src="instagram.png" alt="Instagram"> <img src="tiktok.png" alt="TikTok"> TikTok / Instagram: <a href="#">mivalsalon.mx</a></p>
+                <p><img src="phone.png" alt="Teléfono"> WhatsApp: +52 664 193 1277</p>
+                <p><img src="location.png" alt="Ubicación"> Ubicación: Plaza Financiera, Zona Río, Tijuana BC</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>¡Agradecemos tu confianza, te esperamos en Mival Salón!</p>
+    </div>
+</body>
+</html>
